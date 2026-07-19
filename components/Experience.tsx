@@ -14,7 +14,7 @@ export default function Experience() {
           {EXPERIENCE.map((xp) => (
             <div
               key={xp.role}
-              className="rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(18,24,27,0.5)] to-[rgba(11,15,17,0.25)] p-[clamp(24px,3vw,38px)] transition-colors duration-300 hover:border-accent/40"
+              className="rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(244,246,247,0.5)] to-[rgba(236,239,240,0.25)] p-[clamp(24px,3vw,38px)] transition-colors duration-300 hover:border-accent/40"
             >
               <div className="flex flex-wrap items-baseline justify-between gap-3">
                 <div>

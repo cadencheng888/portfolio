@@ -14,7 +14,7 @@ export default function Projects() {
           {PROJECTS.map((p) => (
             <div
               key={p.name}
-              className="flex flex-col rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(18,24,27,0.5)] to-[rgba(11,15,17,0.25)] p-[30px] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-accent/45 hover:shadow-[0_20px_50px_rgba(0,0,0,0.35)]"
+              className="flex flex-col rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(244,246,247,0.5)] to-[rgba(236,239,240,0.25)] p-[30px] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-accent/45 hover:shadow-[0_20px_50px_rgba(0,0,0,0.35)]"
             >
               <div className="flex items-center justify-between gap-2.5">
                 <span

@@ -81,7 +81,7 @@ export default function Nav() {
 
       {/* mobile menu */}
       <div
-        className={`fixed inset-x-0 top-0 z-49 flex flex-col border-b border-line/12 bg-[rgba(7,8,10,0.97)] pt-[82px] pb-[22px] backdrop-blur-[16px] transition-all duration-[420ms] ease-[cubic-bezier(.4,0,.2,1)] min-[860px]:hidden ${
+        className={`fixed inset-x-0 top-0 z-49 flex flex-col border-b border-line/12 bg-[rgba(255,255,255,0.97)] pt-[82px] pb-[22px] backdrop-blur-[16px] transition-all duration-[420ms] ease-[cubic-bezier(.4,0,.2,1)] min-[860px]:hidden ${
           menuOpen
             ? "translate-y-0 opacity-100"
             : "pointer-events-none -translate-y-[108%] opacity-0"
@@ -95,7 +95,7 @@ export default function Nav() {
             className="flex justify-between border-b border-line/10 px-[clamp(20px,5vw,64px)] py-4 font-grotesk text-[22px] text-fg"
           >
             <span>{l.label}</span>
-            <span className="text-[13px] text-[#4a5f63]">
+            <span className="text-[13px] text-[#98a5aa]">
               0{i + 1}
             </span>
           </a>

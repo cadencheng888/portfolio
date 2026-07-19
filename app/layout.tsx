@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className="overflow-x-hidden bg-ink font-sans text-fg">
         <div
           aria-hidden
-          className="pointer-events-none fixed inset-0 z-9998 bg-[url('/grain.png')] bg-size-[180px_180px] bg-repeat opacity-5"
+          className="pointer-events-none fixed inset-0 z-9998 bg-[url('/grain.png')] bg-size-[180px_180px] bg-repeat opacity-[0.06] mix-blend-multiply"
         />
         {children}
       </body>

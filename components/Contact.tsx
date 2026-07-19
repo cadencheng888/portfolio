@@ -7,7 +7,7 @@ import { CONTACT_ROWS } from "@/lib/data";
 type Errors = { name?: string; email?: string; message?: string };
 
 const inputClasses =
-  "w-full rounded-xl border border-line/18 bg-white/3 px-4 py-3.5 text-[15px] text-fg outline-none transition-[border-color,box-shadow] duration-200 focus:border-accent focus:shadow-[0_0_0_3px_rgba(55,208,216,0.14)]";
+  "w-full rounded-xl border border-line/18 bg-white/3 px-4 py-3.5 text-[15px] text-fg outline-none transition-[border-color,box-shadow] duration-200 focus:border-accent focus:shadow-[0_0_0_3px_rgba(37,99,235,0.14)]";
 
 const labelClasses =
   "mb-[9px] block font-grotesk text-[11px] tracking-[0.16em] text-fg-faint uppercase";
@@ -73,7 +73,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(18,24,27,0.55)] to-[rgba(11,15,17,0.3)] p-[clamp(24px,3vw,36px)]">
+          <div className="rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(244,246,247,0.55)] to-[rgba(236,239,240,0.3)] p-[clamp(24px,3vw,36px)]">
             {!sent ? (
               <form
                 onSubmit={submit}
@@ -136,7 +136,7 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="mt-1 cursor-pointer rounded-xl bg-accent px-[26px] py-[15px] font-grotesk text-[15.5px] font-bold text-accent-ink shadow-[0_10px_30px_rgba(55,208,216,0.24)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_40px_rgba(55,208,216,0.38)]"
+                  className="mt-1 cursor-pointer rounded-xl bg-accent px-[26px] py-[15px] font-grotesk text-[15.5px] font-bold text-accent-ink shadow-[0_10px_30px_rgba(37,99,235,0.24)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_40px_rgba(37,99,235,0.38)]"
                 >
                   Send message →
                 </button>
