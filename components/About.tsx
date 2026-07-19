@@ -1,12 +1,6 @@
 import SectionHead from "./SectionHead";
+import StatsGrid from "./StatsGrid";
 import { COURSEWORK, SKILLS } from "@/lib/data";
-
-const STATS = [
-  { num: "3×", label: "Hackathon podiums" },
-  { num: "100+", label: "Users onboarded" },
-  { num: "7.7M+", label: "Interactions modeled" },
-  { num: "2,000+", label: "Miles run" },
-];
 
 export default function About() {
   return (
@@ -30,22 +24,11 @@ export default function About() {
             </p>
             <p className="mt-[18px] text-[16.5px] leading-[1.7] text-fg-dim">
               Off the keyboard, I&apos;m logging miles or playing chess. The
-              running keeps leaking into my work — Stride Lab and my Garmin MCP
+              running keeps leaking into my work: Stride Lab and my Garmin MCP
               server both exist because I wanted better tools for my own
               training.
             </p>
-            <div className="mt-[38px] grid grid-cols-2 gap-5 sm:grid-cols-4">
-              {STATS.map((s) => (
-                <div key={s.label}>
-                  <div className="font-grotesk text-[clamp(26px,3.4vw,36px)] font-bold text-accent">
-                    {s.num}
-                  </div>
-                  <div className="mt-1.5 font-grotesk text-[11px] leading-[1.5] tracking-[0.14em] text-fg-faint uppercase">
-                    {s.label}
-                  </div>
-                </div>
-              ))}
-            </div>
+            <StatsGrid />
           </div>
 
           <div className="rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(244,246,247,0.6)] to-[rgba(236,239,240,0.3)] p-[30px]">

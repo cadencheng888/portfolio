@@ -16,8 +16,8 @@ export default function Hero() {
           </span>
         </h1>
         <p className="mx-auto mt-7 max-w-[620px] text-[clamp(17px,2.2vw,21px)] leading-[1.55] text-fg-muted">
-          Computer Science &amp; Mathematics student at UC San Diego, building
-          full-stack products and computer-vision systems — and winning the
+          Computer Science &amp; Mathematics student at UC San Diego. I build
+          full-stack products and computer-vision systems, and win the
           occasional hackathon.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-3.5">

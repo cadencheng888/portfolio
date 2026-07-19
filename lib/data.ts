@@ -30,7 +30,7 @@ export const EXPERIENCE: Experience[] = [
     date: "Mar 2026 — Present",
     bullets: [
       "Empowered 100+ club members to make 40+ content updates without a developer using TinaCMS.",
-      "Modeled site content as 9 typed CMS collections — hero, about, FAQ, board, gallery, socials and more.",
+      "Modeled site content as 9 typed CMS collections: hero, about, FAQ, board, gallery, socials and more.",
       "Built a self-serve FAQ accordion and 3 CMS-driven benefit tiers in React with expand/collapse state.",
     ],
   },
@@ -56,6 +56,7 @@ export const PROJECTS: Project[] = [
     description:
       "Real-time 3D model generator & interactive viewer. Converts 2D images into 3D geometry via TripoSR, renders through a custom NumPy pipeline (transforms, culling, lighting), and controls pinch-to-zoom + rotation with MediaPipe hand tracking. Won at ACM Diamond Hacks (500+ participants).",
     tags: ["Python", "OpenCV", "MediaPipe", "NumPy", "Pygame"],
+    github: "https://github.com/MICH3LL3D/inVISION",
   },
   {
     name: "Silent Speech",
@@ -65,6 +66,7 @@ export const PROJECTS: Project[] = [
     description:
       "Real-time lip-reading AI using a BiGRU, hitting 85% accuracy on live webcam feeds. An OpenCV pipeline extracts facial landmarks with scale-invariant normalization; trained with stratified sampling, mixup, and noise-injection augmentation. #1 of 35+ teams at San D Hacks.",
     tags: ["PyTorch", "OpenCV", "TensorFlow", "Python"],
+    github: "https://github.com/davdwan21/Silent-Speech",
   },
   {
     name: "remark.",
@@ -72,7 +74,7 @@ export const PROJECTS: Project[] = [
     award: false,
     date: "Jun 2026",
     description:
-      "Hands-free AI voice agent built in 24h — I owned audio + HUD. A 3-tier agentic router lands 95% of spoken intents across 10+ task types; a real-time React HUD streams captions and reasoning at 2.5s latency, gated by an on-device OpenCV face-check for privacy.",
+      "Hands-free AI voice agent built in 24h (I owned audio + HUD). A 3-tier agentic router lands 95% of spoken intents across 10+ task types; a real-time React HUD streams captions and reasoning at 2.5s latency, gated by an on-device OpenCV face-check for privacy.",
     tags: ["React", "TypeScript", "Claude API", "Deepgram", "FastAPI"],
     github: "https://github.com/cadencheng888/remark.",
   },
@@ -91,7 +93,7 @@ export const PROJECTS: Project[] = [
     award: false,
     date: "Jul 2026",
     description:
-      "In-browser running-form analyzer. Upload a clip and get a skeleton overlay flagging problem joints, angle-specific gait metrics scored good / fair / needs-work, and coaching + strengthening exercises. Auto-detects front, back, side, or diagonal camera views using MediaPipe's 3D world landmarks — everything runs client-side via WebAssembly, so your video never leaves the device.",
+      "In-browser running-form analyzer. Upload a clip and get a skeleton overlay flagging problem joints, angle-specific gait metrics scored good / fair / needs-work, and coaching + strengthening exercises. Auto-detects front, back, side, or diagonal camera views using MediaPipe's 3D world landmarks. Everything runs client-side via WebAssembly, so your video never leaves the device.",
     tags: ["JavaScript", "MediaPipe", "WebAssembly", "Signal Processing"],
     github: "https://github.com/cadencheng888/stride-lab",
   },
@@ -101,7 +103,7 @@ export const PROJECTS: Project[] = [
     award: false,
     date: "Jul 2026",
     description:
-      'Model Context Protocol server that connects Garmin watch data to Claude Desktop — ask "How did I sleep last night?" and Claude answers from real Garmin Connect data. Exposes six tools covering steps, sleep stages, heart rate, workouts, stress, and daily summaries, with one-time OAuth login so your password is never stored.',
+      'Model Context Protocol server that connects Garmin watch data to Claude Desktop: ask "How did I sleep last night?" and Claude answers from real Garmin Connect data. Exposes six tools covering steps, sleep stages, heart rate, workouts, stress, and daily summaries, with one-time OAuth login so your password is never stored.',
     tags: ["Python", "MCP", "Claude", "Garmin Connect API"],
     github: "https://github.com/cadencheng888/garmin-mcp",
   },
@@ -111,19 +113,9 @@ export const PROJECTS: Project[] = [
     award: false,
     date: "May 2026",
     description:
-      "Web-based prescribed-fire planning simulator over live satellite imagery. Models fire spread with the Rothermel equations on real NDVI, moisture, slope, and weather bands from Google Earth Engine, validates real burn-boss conditions before ignition, and recommends optimal controlled-burn zones with a U-Net suitability model — all rendered on a 3D globe.",
+      "Web-based prescribed-fire planning simulator over live satellite imagery. Models fire spread with the Rothermel equations on real NDVI, moisture, slope, and weather bands from Google Earth Engine, validates real burn-boss conditions before ignition, and recommends optimal controlled-burn zones with a U-Net suitability model, all rendered on a 3D globe.",
     tags: ["React", "TypeScript", "Three.js", "PyTorch", "Earth Engine"],
     github: "https://github.com/cadencheng888/re-scorched",
-  },
-  {
-    name: "Differential Equation Tool",
-    badge: "★ BEST IN CLASS",
-    award: true,
-    date: "Mar 2025",
-    description:
-      'JavaFX educational tool for learning, practicing, and solving 1st- and 2nd-order homogeneous differential equations — with an instructional guide, an infinite random-problem practice mode, and a solver handling real, repeated, and complex roots. Voted "Best in Class" in AP CS A and adopted by the instructor for future curriculum.',
-    tags: ["Java", "JavaFX"],
-    github: "https://github.com/cadencheng888/differential-equation-tool",
   },
 ];
 

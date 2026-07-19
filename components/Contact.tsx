@@ -150,7 +150,7 @@ export default function Contact() {
                   Message sent!
                 </h3>
                 <p className="mx-auto mt-2.5 max-w-[34ch] text-[15px] leading-[1.6] text-fg-muted">
-                  Thanks for reaching out — I&apos;ll get back to you soon. In a
+                  Thanks for reaching out. I&apos;ll get back to you soon. In a
                   hurry? Email me at cfc005@ucsd.edu.
                 </p>
               </div>

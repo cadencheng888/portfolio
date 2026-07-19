@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Caden Cheng — Software Developer",
   description:
-    "Caden Cheng — Computer Science & Mathematics student at UC San Diego, building full-stack products and computer-vision systems.",
+    "Caden Cheng is a Computer Science & Mathematics student at UC San Diego who builds full-stack products and computer-vision systems.",
 };
 
 export default function RootLayout({
