@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-manrope);
+  --font-grotesk: var(--font-space-grotesk);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --color-ink: #060708;
+  --color-accent: #37d0d8;
+  --color-accent-soft: #9be9ee;
+  --color-accent-ink: #041014;
+
+  --color-fg: #e7eff0;
+  --color-fg-bright: #eff6f7;
+  --color-fg-muted: #b3c2c6;
+  --color-fg-dim: #8ba1a6;
+  --color-fg-faint: #7d8f93;
+  --color-fg-ghost: #5a6d71;
+  --color-fg-chip: #c0cdd1;
+
+  --color-line: #96a8ac;
+  --color-error: #ff8f8f;
+
+  --animate-fade-up: fade-up 0.9s 0.05s both;
+  --animate-float-down: float-down 2.6s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(26px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes float-down {
+    0%,
+    100% {
+      transform: translateY(0);
+      opacity: 0.35;
+    }
+    50% {
+      transform: translateY(9px);
+      opacity: 1;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
 }
