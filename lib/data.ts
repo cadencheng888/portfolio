@@ -14,7 +14,18 @@ export type Experience = {
 
 export const EXPERIENCE: Experience[] = [
   {
-    role: "Software Developer → Incoming VP of Technology",
+    role: "Software Engineer Intern",
+    org: "Barobo · San Jose, CA",
+    date: "Jun 2026 — Present",
+    bullets: [
+      "Stopped unauthorized video sharing by engineering single-use AWS CloudFront signed URLs with TTLs.",
+      "Scaled to 10,000+ monthly video requests by tracking user metadata in AWS DynamoDB for authorization.",
+      "Cut environment provisioning from 2 hours to 15 minutes by writing reusable Terraform and AWS CLI scripts.",
+      "Decreased API response time by 40%, as measured by AWS CloudWatch, by troubleshooting and optimizing database queries.",
+    ],
+  },
+  {
+    role: "Software Developer → Incoming VP of Technology & Engineering Manager",
     org: "Computer Science Engineering Society (CSES) · UCSD",
     date: "Oct 2025 — Present",
     bullets: [
@@ -29,7 +40,7 @@ export const EXPERIENCE: Experience[] = [
     org: "Triton Web Developers (TWD) · UCSD",
     date: "Mar 2026 — Present",
     bullets: [
-      "Empowered 100+ club members to make 40+ content updates without a developer using TinaCMS.",
+      "Moved content editing to TinaCMS so 100+ club members could make 40+ updates without a developer.",
       "Modeled site content as 9 typed CMS collections: hero, about, FAQ, board, gallery, socials and more.",
       "Built a self-serve FAQ accordion and 3 CMS-driven benefit tiers in React with expand/collapse state.",
     ],
@@ -64,7 +75,7 @@ export const PROJECTS: Project[] = [
     award: true,
     date: "Jan 2026",
     description:
-      "Real-time lip-reading AI using a BiGRU, hitting 85% accuracy on live webcam feeds. An OpenCV pipeline extracts facial landmarks with scale-invariant normalization; trained with stratified sampling, mixup, and noise-injection augmentation. #1 of 35+ teams at San D Hacks.",
+      "Real-time lip-reading AI built on a BiGRU that hits 85% accuracy on live webcam feeds. An OpenCV pipeline extracts facial landmarks with scale-invariant normalization; trained with stratified sampling, mixup, and noise-injection augmentation. #1 of 35+ teams at San D Hacks.",
     tags: ["PyTorch", "OpenCV", "TensorFlow", "Python"],
     github: "https://github.com/davdwan21/Silent-Speech",
   },
@@ -122,7 +133,7 @@ export const PROJECTS: Project[] = [
 export const SKILLS: { group: string; items: string[] }[] = [
   {
     group: "Languages",
-    items: ["Java", "Python", "JavaScript", "TypeScript", "C/C++", "HTML/CSS", "SQL"],
+    items: ["Java", "Python", "JavaScript", "TypeScript", "C/C++", "C#", "HTML/CSS", "SQL"],
   },
   {
     group: "Frameworks",
@@ -130,7 +141,14 @@ export const SKILLS: { group: string; items: string[] }[] = [
   },
   {
     group: "Developer Tools",
-    items: ["Git/GitHub", "MongoDB Atlas", "npm", "Jest"],
+    items: [
+      "Git/GitHub",
+      "AWS (CloudFront, DynamoDB, CLI)",
+      "Terraform",
+      "MongoDB Atlas",
+      "npm",
+      "Linux/Unix",
+    ],
   },
   {
     group: "Libraries",
