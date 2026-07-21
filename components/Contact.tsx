@@ -16,6 +16,8 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState<Errors>({});
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState(false);
 
   const update =
     (field: keyof typeof form) =>
@@ -24,7 +26,7 @@ export default function Contact() {
       setErrors((errs) => ({ ...errs, [field]: undefined }));
     };
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     const errs: Errors = {};
     if (!form.name.trim()) errs.name = "Please enter your name.";
@@ -35,8 +37,34 @@ export default function Contact() {
       setErrors(errs);
       return;
     }
-    setSent(true);
     setErrors({});
+    setSendError(false);
+    setSending(true);
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/cfc005@ucsd.edu", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          message: form.message.trim(),
+          _subject: `Portfolio contact from ${form.name.trim()}`,
+        }),
+      });
+      // FormSubmit returns HTTP 200 even on failure; the JSON `success`
+      // field (a string) is the real result.
+      const data = await res.json();
+      if (!res.ok || String(data.success) !== "true")
+        throw new Error(data.message || `Request failed: ${res.status}`);
+      setSent(true);
+    } catch {
+      setSendError(true);
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -136,10 +164,21 @@ export default function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="mt-1 cursor-pointer rounded-xl bg-accent px-[26px] py-[15px] font-grotesk text-[15.5px] font-bold text-accent-ink shadow-[0_10px_30px_rgba(37,99,235,0.24)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_40px_rgba(37,99,235,0.38)]"
+                  disabled={sending}
+                  className="mt-1 cursor-pointer rounded-xl bg-accent px-[26px] py-[15px] font-grotesk text-[15.5px] font-bold text-accent-ink shadow-[0_10px_30px_rgba(37,99,235,0.24)] transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_40px_rgba(37,99,235,0.38)] disabled:cursor-default disabled:opacity-60 disabled:hover:translate-y-0"
                 >
-                  Send message →
+                  {sending ? "Sending…" : "Send message →"}
                 </button>
+                {sendError && (
+                  <div className="font-grotesk text-xs text-error">
+                    Something went wrong sending your message. Please try again,
+                    or email me directly at{" "}
+                    <a href="mailto:cfc005@ucsd.edu" className="underline">
+                      cfc005@ucsd.edu
+                    </a>
+                    .
+                  </div>
+                )}
               </form>
             ) : (
               <div className="px-3 py-[34px] text-center">
