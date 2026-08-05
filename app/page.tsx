@@ -208,7 +208,7 @@ export default function PortfolioV2() {
                 b.s. in computer science and mathematics
               </p>
               <p className="text-[14px] leading-[1.65]">data science minor</p>
-              <p className="mt-2 text-[14px] text-[#6B7280]">graduating 2028</p>
+              <p className="mt-2 text-[14px] text-[#6B7280]">graduating 2029</p>
             </div>
           </section>
 
