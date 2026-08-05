@@ -33,7 +33,7 @@ const PILLS = [
 
 const EXPERIENCES = [
   {
-    name: "barobo",
+    name: "barobo inc",
     role: "software engineer intern",
     meta: ["san jose, ca", "june 2026 - present"],
   },
@@ -186,15 +186,15 @@ export default function PortfolioV2() {
           <section id="about" className="mb-[76px] scroll-mt-[90px]">
             <SectionTitle>About</SectionTitle>
             <p className="mb-3.5 text-[14.5px] leading-[1.75] text-[#4B5563]">
-              i study computer science and mathematics at uc san diego, with a
+              HELLO!! i study computer science and mathematics at uc san diego, with a
               minor in data science.
             </p>
             <p className="text-[14.5px] leading-[1.75] text-[#4B5563]">
-              most of my work is full stack applications and ai systems. i love
-              running,
-              and i enjoy digging into the science and training behind it.
-              because of this, stride lab and the garmin mcp server started as
-              tools i wanted for my own training :)
+              most of my work is full stack applications and ai systems. outside of that, 
+              i love running,
+              and i enjoy digging into the science behind training.
+              because of this, stride lab and the garmin mcp server actually started 
+              out of this passion - i built them as personal tools to help with my own training :)
             </p>
           </section>
 
