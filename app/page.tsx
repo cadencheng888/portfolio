@@ -13,7 +13,7 @@ const geist = Geist({ subsets: ["latin"], weight: ["700"] });
 export const metadata: Metadata = {
   title: "caden cheng — software engineer",
   description:
-    "software engineer building backend infrastructure and ai-powered products.",
+    "software engineer building full stack and ai-powered products.",
 };
 
 const NAV = [
@@ -143,8 +143,7 @@ export default function PortfolioV2() {
               caden cheng
             </h1>
             <p className="mb-3 max-w-[560px] text-[15px] leading-[1.75] text-[#4B5563]">
-              software engineer building backend infrastructure and ai-powered
-              products.
+              software engineer building full stack and ai-powered products.
             </p>
             <p className="mb-8 text-[14px] text-[#6B7280]">
               cs + math @ uc san diego · la jolla, ca
