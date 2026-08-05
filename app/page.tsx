@@ -190,7 +190,8 @@ export default function PortfolioV2() {
               minor in data science.
             </p>
             <p className="text-[14.5px] leading-[1.75] text-[#4B5563]">
-              most of my work is backend and infrastructure. i love running,
+              most of my work is full stack applications and ai stuff. i love
+              running,
               and i enjoy digging into the science and training behind it.
               because of this, stride lab and the garmin mcp server started as
               tools i wanted for my own training :)
