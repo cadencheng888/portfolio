@@ -28,7 +28,7 @@ const PILLS = [
   { href: "mailto:cfc005@ucsd.edu", label: "email", primary: true },
   { href: "https://github.com/cadencheng888", label: "github" },
   { href: "https://linkedin.com/in/cadenfcheng", label: "linkedin" },
-  { href: "/uploads/resume.pdf", label: "résumé ↗" },
+  { href: "/uploads/resume.pdf", label: "resume ↗" },
 ];
 
 const EXPERIENCES = [
