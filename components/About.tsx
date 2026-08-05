@@ -1,7 +1,8 @@
 import Image from "next/image";
+import CoverMedia from "./CoverMedia";
 import SectionHead from "./SectionHead";
 import StatsGrid from "./StatsGrid";
-import { COURSEWORK, SKILLS } from "@/lib/data";
+import { COURSEWORK, HEADSHOT, SKILLS } from "@/lib/data";
 
 export default function About() {
   return (
@@ -33,56 +34,73 @@ export default function About() {
             <StatsGrid />
           </div>
 
-          <div className="rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(244,246,247,0.6)] to-[rgba(236,239,240,0.3)] p-[30px]">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <div className="mb-[18px] font-grotesk text-[11.5px] tracking-[0.24em] text-fg-faint uppercase">
-                  Education
-                </div>
-                <div className="font-grotesk text-[22px] leading-[1.25] font-semibold text-fg-bright">
-                  University of California, San Diego
-                </div>
-              </div>
-              <Image
-                src="/ucsd-seal.svg"
-                alt="UC San Diego seal"
-                width={64}
-                height={64}
-                className="shrink-0"
+          <figure className="w-full max-w-[440px] justify-self-center min-[840px]:justify-self-end">
+            <div className="rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(244,246,247,0.6)] to-[rgba(236,239,240,0.3)] p-2.5">
+              <CoverMedia
+                image={HEADSHOT}
+                monogram="CC"
+                label="Portrait"
+                aspect="aspect-[4/5]"
+                sizes="(max-width: 500px) 92vw, 440px"
+                className="rounded-[12px]"
               />
             </div>
-            <div className="mt-2 text-[15.5px] leading-[1.6] text-fg-muted">
-              B.S. Computer Science &amp; Mathematics
-              <br />
-              Data Science Minor
+          </figure>
+        </div>
+
+        <div className="mt-[clamp(40px,6vw,64px)] rounded-[18px] border border-line/16 bg-linear-to-b from-[rgba(244,246,247,0.6)] to-[rgba(236,239,240,0.3)] p-[30px]">
+          <div className="grid gap-8 md:grid-cols-[1.1fr_1fr] md:gap-12">
+            <div>
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <div className="mb-[18px] font-grotesk text-[11.5px] tracking-[0.24em] text-fg-faint uppercase">
+                    Education
+                  </div>
+                  <div className="font-grotesk text-[22px] leading-[1.25] font-semibold text-fg-bright">
+                    University of California, San Diego
+                  </div>
+                </div>
+                <Image
+                  src="/ucsd-seal.svg"
+                  alt="UC San Diego seal"
+                  width={64}
+                  height={64}
+                  className="shrink-0"
+                />
+              </div>
+              <div className="mt-2 text-[15.5px] leading-[1.6] text-fg-muted">
+                B.S. Computer Science &amp; Mathematics
+                <br />
+                Data Science Minor
+              </div>
+              <div className="mt-5 flex flex-wrap gap-[22px] border-t border-line/12 pt-5">
+                <div>
+                  <div className="font-grotesk text-[10.5px] tracking-[0.16em] text-fg-faint uppercase">
+                    Expected
+                  </div>
+                  <div className="mt-1 font-grotesk text-[19px] font-semibold text-accent">
+                    2028
+                  </div>
+                </div>
+                <div>
+                  <div className="font-grotesk text-[10.5px] tracking-[0.16em] text-fg-faint uppercase">
+                    GPA
+                  </div>
+                  <div className="mt-1 font-grotesk text-[19px] font-semibold text-accent">
+                    3.53
+                  </div>
+                </div>
+                <div className="min-w-[150px] flex-1">
+                  <div className="font-grotesk text-[10.5px] tracking-[0.16em] text-fg-faint uppercase">
+                    Location
+                  </div>
+                  <div className="mt-1 font-grotesk text-[19px] font-semibold text-fg">
+                    La Jolla, CA
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="mt-5 flex flex-wrap gap-[22px] border-t border-line/12 pt-5">
-              <div>
-                <div className="font-grotesk text-[10.5px] tracking-[0.16em] text-fg-faint uppercase">
-                  Expected
-                </div>
-                <div className="mt-1 font-grotesk text-[19px] font-semibold text-accent">
-                  2028
-                </div>
-              </div>
-              <div>
-                <div className="font-grotesk text-[10.5px] tracking-[0.16em] text-fg-faint uppercase">
-                  GPA
-                </div>
-                <div className="mt-1 font-grotesk text-[19px] font-semibold text-accent">
-                  3.53
-                </div>
-              </div>
-              <div className="min-w-[150px] flex-1">
-                <div className="font-grotesk text-[10.5px] tracking-[0.16em] text-fg-faint uppercase">
-                  Location
-                </div>
-                <div className="mt-1 font-grotesk text-[19px] font-semibold text-fg">
-                  La Jolla, CA
-                </div>
-              </div>
-            </div>
-            <div className="mt-5 border-t border-line/12 pt-5">
+            <div className="md:border-l md:border-line/12 md:pl-10">
               <div className="mb-3 font-grotesk text-[10.5px] tracking-[0.16em] text-fg-faint uppercase">
                 Relevant Coursework
               </div>

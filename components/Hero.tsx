@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { HEADSHOT } from "@/lib/data";
+
 export default function Hero() {
   return (
     <section
@@ -9,6 +12,19 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-1 h-[180px] bg-linear-to-b from-transparent to-ink" />
 
       <div className="relative z-2 w-full max-w-[960px] animate-fade-up">
+        {HEADSHOT && (
+          <div className="relative mx-auto mb-9 h-[96px] w-[96px]">
+            <Image
+              src={HEADSHOT.src}
+              alt={HEADSHOT.alt}
+              fill
+              sizes="96px"
+              loading="eager"
+              fetchPriority="high"
+              className="img-grade rounded-full object-cover object-[50%_20%] shadow-[0_10px_30px_rgba(18,24,28,0.14)] ring-1 ring-line/25"
+            />
+          </div>
+        )}
         <h1 className="font-grotesk text-[clamp(46px,9vw,112px)] leading-[0.96] font-bold tracking-[-0.025em] text-fg-bright">
           Hi, I&apos;m{" "}
           <span className="text-accent [text-shadow:0_0_40px_rgba(37,99,235,0.18)]">

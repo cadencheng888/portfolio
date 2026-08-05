@@ -5,6 +5,13 @@ export const NAV_LINKS = [
   { href: "#contact", label: "Contact" },
 ];
 
+export type ImageAsset = { src: string; alt: string };
+
+export const HEADSHOT: ImageAsset | null = {
+  src: "/images/headshot.jpg",
+  alt: "Caden Cheng, portrait",
+};
+
 export type Experience = {
   role: string;
   org: string;

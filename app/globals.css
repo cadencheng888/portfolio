@@ -48,6 +48,10 @@
   }
 }
 
+@utility img-grade {
+  filter: saturate(0.94) contrast(1.03) brightness(1.01);
+}
+
 html {
   scroll-behavior: smooth;
 }
