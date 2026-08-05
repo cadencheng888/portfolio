@@ -66,7 +66,7 @@ const PROJECTS_V2 = [
     meta: ["berkeley hackathon", "june 2026"],
   },
   {
-    name: "stride lab",
+    name: "cadence",
     blurb: "in-browser running-form analyzer with skeleton overlay and gait metrics",
     meta: ["runs fully client-side via webassembly", "july 2026"],
   },
@@ -193,7 +193,7 @@ export default function PortfolioV2() {
               most of my work is full stack applications and ai systems. outside of that, 
               i love running,
               and i enjoy digging into the science behind training.
-              because of this, stride lab and the garmin mcp server actually started 
+              because of this, cadence and the garmin mcp server actually started
               out of this passion - i built them as personal tools to help with my own training :)
             </p>
           </section>

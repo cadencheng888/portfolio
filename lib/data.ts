@@ -106,14 +106,14 @@ export const PROJECTS: Project[] = [
     tags: ["Pandas", "PyTorch", "NumPy", "Matplotlib"],
   },
   {
-    name: "Stride Lab",
+    name: "cadence",
     badge: "COMPUTER VISION",
     award: false,
     date: "Jul 2026",
     description:
       "In-browser running-form analyzer. Upload a clip and get a skeleton overlay flagging problem joints, angle-specific gait metrics scored good / fair / needs-work, and coaching + strengthening exercises. Auto-detects front, back, side, or diagonal camera views using MediaPipe's 3D world landmarks. Everything runs client-side via WebAssembly, so your video never leaves the device.",
     tags: ["JavaScript", "MediaPipe", "WebAssembly", "Signal Processing"],
-    github: "https://github.com/cadencheng888/stride-lab",
+    github: "https://github.com/cadencheng888/cadence",
   },
   {
     name: "Garmin MCP Server",
