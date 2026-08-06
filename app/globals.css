@@ -1,62 +1,10 @@
 @import "tailwindcss";
 
-@theme inline {
-  --font-sans: var(--font-manrope);
-  --font-grotesk: var(--font-space-grotesk);
-}
-
-@theme {
-  --color-ink: #ffffff;
-  --color-accent: #2563eb;
-  --color-accent-soft: #1d4ed8;
-  --color-accent-ink: #ffffff;
-
-  --color-fg: #12181c;
-  --color-fg-bright: #0a0e10;
-  --color-fg-muted: #39454a;
-  --color-fg-dim: #52616a;
-  --color-fg-faint: #5d6b70;
-  --color-fg-ghost: #7a888c;
-  --color-fg-chip: #3d4a4f;
-
-  --color-line: #3c4e54;
-  --color-error: #c53b40;
-
-  --animate-fade-up: fade-up 0.9s 0.05s both;
-  --animate-float-down: float-down 2.6s ease-in-out infinite;
-
-  @keyframes fade-up {
-    from {
-      opacity: 0;
-      transform: translateY(26px);
-    }
-    to {
-      opacity: 1;
-      transform: none;
-    }
-  }
-  @keyframes float-down {
-    0%,
-    100% {
-      transform: translateY(0);
-      opacity: 0.35;
-    }
-    50% {
-      transform: translateY(9px);
-      opacity: 1;
-    }
-  }
-}
-
-@utility img-grade {
-  filter: saturate(0.94) contrast(1.03) brightness(1.01);
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-accent-ink);
+  background: #1a1917;
+  color: #fbfaf8;
 }
