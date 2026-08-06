@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -36,6 +37,7 @@ export default function RootLayout({
           className="pointer-events-none fixed inset-0 z-9998 bg-[url('/grain.png')] bg-size-[180px_180px] bg-repeat opacity-[0.06] mix-blend-multiply"
         />
         {children}
+        <Analytics />
       </body>
     </html>
   );
