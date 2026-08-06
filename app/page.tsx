@@ -54,26 +54,31 @@ const PROJECTS_V2 = [
     name: "invision",
     blurb: "touchless 3d vision pipeline at 60 fps",
     meta: ["best ai at acm diamond hacks", "april 2026"],
+    github: "https://github.com/MICH3LL3D/inVISION",
   },
   {
     name: "silent speech",
     blurb: "real-time lip-reading bigru at 85% accuracy",
     meta: ["#1 best hack out of 35+ teams", "january 2026"],
+    github: "https://github.com/davdwan21/Silent-Speech",
   },
   {
     name: "remark.",
     blurb: "hands-free voice agent, 2.5s speech-to-action",
     meta: ["berkeley hackathon", "june 2026"],
+    github: "https://github.com/cadencheng888/remark.",
   },
   {
     name: "cadence",
     blurb: "in-browser running-form analyzer with skeleton overlay and gait metrics",
     meta: ["runs fully client-side via webassembly", "july 2026"],
+    github: "https://github.com/cadencheng888/cadence",
   },
   {
     name: "garmin mcp server",
     blurb: "connects garmin watch data to claude desktop over mcp",
     meta: ["six tools: sleep, heart rate, workouts, stress", "july 2026"],
+    github: "https://github.com/cadencheng888/garmin-mcp",
   },
 ];
 
@@ -91,10 +96,12 @@ function RuledEntry({
   name,
   line,
   meta,
+  github,
 }: {
   name?: string;
   line: string;
   meta: string[];
+  github?: string;
 }) {
   return (
     <div className="flex flex-col gap-0.5 border-l-4 border-[#6B7280] pl-4">
@@ -107,6 +114,16 @@ function RuledEntry({
           {m}
         </p>
       ))}
+      {github && (
+        <a
+          href={github}
+          target="_blank"
+          rel="noopener"
+          className="mt-2 self-start text-[14px] text-[#6B7280] underline underline-offset-[3px] transition-colors duration-150 hover:text-[#1A1917]"
+        >
+          github ↗
+        </a>
+      )}
     </div>
   );
 }
@@ -225,7 +242,13 @@ export default function PortfolioV2() {
             <SectionTitle>Projects</SectionTitle>
             <div className="flex flex-col gap-10">
               {PROJECTS_V2.map((p) => (
-                <RuledEntry key={p.name} name={p.name} line={p.blurb} meta={p.meta} />
+                <RuledEntry
+                  key={p.name}
+                  name={p.name}
+                  line={p.blurb}
+                  meta={p.meta}
+                  github={p.github}
+                />
               ))}
             </div>
           </section>
