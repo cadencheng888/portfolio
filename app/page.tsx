@@ -105,25 +105,31 @@ function RuledEntry({
 }) {
   return (
     <div className="flex flex-col gap-0.5 border-l-4 border-[#6B7280] pl-4">
-      {name && (
-        <p className="mb-1 text-[24px] font-bold tracking-[-0.02em]">{name}</p>
-      )}
+      {name &&
+        (github ? (
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener"
+            className="group mb-1 self-start text-[24px] font-bold tracking-[-0.02em] decoration-2 underline-offset-[4px] hover:underline"
+          >
+            {name}
+            <span
+              aria-hidden
+              className="ml-1.5 inline-block opacity-0 transition-opacity duration-150 group-hover:opacity-100"
+            >
+              ↗
+            </span>
+          </a>
+        ) : (
+          <p className="mb-1 text-[24px] font-bold tracking-[-0.02em]">{name}</p>
+        ))}
       <p className="text-[14px] leading-[1.65]">{line}</p>
       {meta.map((m) => (
         <p key={m} className="mt-2 text-[14px] text-[#6B7280]">
           {m}
         </p>
       ))}
-      {github && (
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener"
-          className="mt-2 self-start text-[14px] text-[#6B7280] underline underline-offset-[3px] transition-colors duration-150 hover:text-[#1A1917]"
-        >
-          github ↗
-        </a>
-      )}
     </div>
   );
 }
