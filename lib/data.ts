@@ -23,23 +23,22 @@ export const EXPERIENCE: Experience[] = [
   {
     role: "Software Engineer Intern",
     org: "Barobo · San Jose, CA",
-    date: "Jun 2026 — Present",
+    date: "Jun 2026 — Aug 2026",
     bullets: [
-      "Stopped unauthorized video sharing by engineering single-use AWS CloudFront signed URLs with TTLs.",
-      "Scaled to 10,000+ monthly video requests by tracking user metadata in AWS DynamoDB for authorization.",
-      "Cut environment provisioning from 2 hours to 15 minutes by writing reusable Terraform and AWS CLI scripts.",
-      "Decreased API response time by 40%, as measured by AWS CloudWatch, by troubleshooting and optimizing database queries.",
+      "Signed CloudFront video URLs with a configurable TTL (default 30 min); rejects ~175 expired links/month.",
+      "Gated 10K monthly video requests by account with per-user session and ownership records in DynamoDB.",
+      "Cut environment provisioning from 2h to 15m with 3 Terraform modules and automated AWS CLI scripts.",
+      "Dropped p50 latency on the course-videos API 400→240ms by collapsing 4 N+1 SQL queries into joins.",
     ],
   },
   {
-    role: "Software Developer → Incoming VP of Technology & Engineering Manager",
+    role: "Software Developer → Incoming VP of Technology",
     org: "Computer Science Engineering Society (CSES) · UCSD",
     date: "Oct 2025 — Present",
     bullets: [
-      "Onboarded 100 users across 10 UCSD labs by shipping the auth, role-selection, and profile-setup flows in Next.js.",
-      "Secured API access for 4 user roles with an RBAC layer of 10 scoped permissions in TypeScript.",
-      "Restricted 10 labs' data to verified @ucsd.edu users by integrating Google OAuth with NextAuth and JWT.",
-      "Hardened auth reliability with 11 Jest unit tests and an indexed Mongoose user schema with email validation.",
+      "Built Google OAuth (NextAuth) + JWT sessions for a lab-inventory app used by 100 members in 10 labs.",
+      "Enforced 4-role RBAC across 12 API routes with 10 scoped permissions; 15 Jest tests run on every PR.",
+      "Rejected duplicate lab memberships with a unique compound index on (user, lab) in Mongoose.",
     ],
   },
   {
@@ -47,9 +46,8 @@ export const EXPERIENCE: Experience[] = [
     org: "Triton Web Developers (TWD) · UCSD",
     date: "Mar 2026 — Present",
     bullets: [
-      "Moved content editing to TinaCMS so 100+ club members could make 40+ updates without a developer.",
-      "Modeled site content as 9 typed CMS collections: hero, about, FAQ, board, gallery, socials and more.",
-      "Built a self-serve FAQ accordion and 3 CMS-driven benefit tiers in React with expand/collapse state.",
+      "Integrated TinaCMS so officers edit content without a PR; 40+ member edits shipped with 0 dev commits.",
+      "Modeled the homepage as 7 typed CMS sections, replacing hand-edited HTML that broke on every edit.",
     ],
   },
 ];
@@ -72,18 +70,18 @@ export const PROJECTS: Project[] = [
     award: true,
     date: "Apr 2026",
     description:
-      "Real-time 3D model generator & interactive viewer. Converts 2D images into 3D geometry via TripoSR, renders through a custom NumPy pipeline (transforms, culling, lighting), and controls pinch-to-zoom + rotation with MediaPipe hand tracking. Won at ACM Diamond Hacks (500+ participants).",
+      "Turns a phone photo into a 3D model you rotate with your hand. Uploads run YOLOv8 detect → crop → background removal before TripoSR mesh generation; a custom NumPy renderer cut peak memory 5x (34.7 → 6.7 MB on a 267k-face mesh), and 21 MediaPipe hand landmarks drive a smoothed rotation matrix at 23 ms/frame. Best Interactive AI at DiamondHacks.",
     tags: ["Python", "OpenCV", "MediaPipe", "NumPy", "Pygame"],
     github: "https://github.com/MICH3LL3D/inVISION",
   },
   {
     name: "Silent Speech",
-    badge: "★ #1 BEST OVERALL",
+    badge: "★ BEST HACK",
     award: true,
     date: "Jan 2026",
     description:
-      "Real-time lip-reading AI built on a BiGRU that hits 85% accuracy on live webcam feeds. An OpenCV pipeline extracts facial landmarks with scale-invariant normalization; trained with stratified sampling, mixup, and noise-injection augmentation. #1 of 35+ teams at San D Hacks.",
-    tags: ["PyTorch", "OpenCV", "TensorFlow", "Python"],
+      "Real-time lip reading with a BiGRU over 90-frame clips of 88 mouth/jaw landmarks: 78% (39/50) live word accuracy. Recorded and labeled the 5-word dataset in 24h, normalized by mouth width for distance invariance; noise + frame-drop augmentation raised val accuracy 72→79%. Best Hack at SanD Hacks.",
+    tags: ["PyTorch", "MediaPipe", "OpenCV", "Python"],
     github: "https://github.com/davdwan21/Silent-Speech",
   },
   {
@@ -92,8 +90,8 @@ export const PROJECTS: Project[] = [
     award: false,
     date: "Jun 2026",
     description:
-      "Hands-free AI voice agent built in 24h (I owned audio + HUD). A 3-tier agentic router lands 95% of spoken intents across 10+ task types; a real-time React HUD streams captions and reasoning at 2.5s latency, gated by an on-device OpenCV face-check for privacy.",
-    tags: ["React", "TypeScript", "Claude API", "Deepgram", "FastAPI"],
+      "Voice agent built in 24h that turns overheard plans into calendar events and spoken commands into actions. Claude gets 5 tools across 11 app categories, routed through 3 tiers (Agentverse → Calendar → Browserbase), at 3.2s median speech-to-event latency. An on-device OpenCV face gate keeps the mic off unless a face is in view.",
+    tags: ["Python", "TypeScript", "React", "FastAPI", "Claude API", "Deepgram"],
     github: "https://github.com/cadencheng888/remark.",
   },
   {
@@ -140,20 +138,32 @@ export const PROJECTS: Project[] = [
 export const SKILLS: { group: string; items: string[] }[] = [
   {
     group: "Languages",
-    items: ["Java", "Python", "JavaScript", "TypeScript", "C/C++", "C#", "HTML/CSS", "SQL"],
+    items: ["Python", "JavaScript", "TypeScript", "C/C++", "C#", "HTML/CSS", "SQL"],
   },
   {
     group: "Frameworks",
-    items: ["React", "Next.js", "Node.js", "Tailwind CSS", "PyTorch", "TensorFlow"],
+    items: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Tailwind CSS",
+      "PyTorch",
+      "TensorFlow",
+      "LLMs/GenAI",
+      "NLP",
+      "RAG",
+    ],
   },
   {
     group: "Developer Tools",
     items: [
       "Git/GitHub",
+      "Docker",
+      "CI/CD",
       "AWS (CloudFront, DynamoDB, CLI)",
       "Terraform",
-      "MongoDB Atlas",
-      "npm",
+      "Cursor",
+      "Gemini",
       "Linux/Unix",
     ],
   },
@@ -165,9 +175,9 @@ export const SKILLS: { group: string; items: string[] }[] = [
 
 export const COURSEWORK = [
   "Data Structures",
-  "Discrete Math",
   "Systems Programming",
   "Algorithms",
+  "Operating Systems",
 ];
 
 export const CONTACT_ROWS = [

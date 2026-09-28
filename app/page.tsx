@@ -35,7 +35,7 @@ const EXPERIENCES = [
   {
     name: "barobo inc",
     role: "software engineer intern",
-    meta: ["san jose, ca", "june 2026 - present"],
+    meta: ["san jose, ca", "june 2026 - august 2026"],
   },
   {
     name: "computer science engineering society",
@@ -52,20 +52,20 @@ const EXPERIENCES = [
 const PROJECTS_V2 = [
   {
     name: "invision",
-    blurb: "touchless 3d vision pipeline at 60 fps",
-    meta: ["best ai at acm diamond hacks", "april 2026"],
+    blurb: "photo-to-3d model viewer you rotate with hand gestures",
+    meta: ["best interactive ai at diamondhacks", "april 2026"],
     github: "https://github.com/MICH3LL3D/inVISION",
   },
   {
     name: "silent speech",
-    blurb: "real-time lip-reading bigru at 85% accuracy",
-    meta: ["#1 best hack out of 35+ teams", "january 2026"],
+    blurb: "real-time lip-reading bigru, 78% live word accuracy",
+    meta: ["best hack at sand hacks", "january 2026"],
     github: "https://github.com/davdwan21/Silent-Speech",
   },
   {
     name: "remark.",
-    blurb: "hands-free voice agent, 2.5s speech-to-action",
-    meta: ["berkeley hackathon", "june 2026"],
+    blurb: "voice agent that schedules overheard plans, 3.2s median latency",
+    meta: ["berkeley ai hackathon", "june 2026"],
     github: "https://github.com/cadencheng888/remark.",
   },
   {
