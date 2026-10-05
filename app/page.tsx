@@ -28,7 +28,7 @@ const PILLS = [
   { href: "mailto:cfc005@ucsd.edu", label: "email", primary: true },
   { href: "https://github.com/cadencheng888", label: "github" },
   { href: "https://linkedin.com/in/cadenfcheng", label: "linkedin" },
-  { href: "/uploads/resume.pdf", label: "resume ↗" },
+  { href: "/uploads/Cheng_Caden_resume.pdf", label: "resume ↗" },
 ];
 
 const EXPERIENCES = [
@@ -289,7 +289,7 @@ export default function PortfolioV2() {
               </a>
               <span className="text-[#C9C4BB]">|</span>
               <a
-                href="/uploads/resume.pdf"
+                href="/uploads/Cheng_Caden_resume.pdf"
                 target="_blank"
                 rel="noopener"
                 className="text-[#1A1917] underline underline-offset-[3px] transition-opacity duration-150 hover:opacity-50"

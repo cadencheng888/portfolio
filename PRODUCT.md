@@ -22,7 +22,7 @@ Personal portfolio for Caden Cheng, CS + Mathematics student at UC San Diego ('2
 
 - Single-page Next.js site at `/` using the mono/cream design (nav → hero+headshot → about → education → experiences → projects → contact). The Skills section was deliberately removed. The previous blue editorial design lives in git history (components under `components/` are currently unused).
 - Dev server runs at localhost:3001; contact form on `/` posts via FormSubmit to email.
-- Recruiters may cross-reference the resume PDF (`/uploads/resume.pdf`) — site claims and resume claims must stay in sync (this has drifted before, e.g. award names).
+- Recruiters may cross-reference the resume PDF (`/uploads/Cheng_Caden_resume.pdf`) — site claims and resume claims must stay in sync (this has drifted before, e.g. award names).
 
 ## Capabilities and Constraints
 
@@ -41,7 +41,7 @@ Personal portfolio for Caden Cheng, CS + Mathematics student at UC San Diego ('2
 - 7 real projects with GitHub links (`lib/data.ts`): inVISION (Best Interactive AI, ACM Diamond Hacks, 500+ participants), Silent Speech (#1 Best Overall, San D Hacks), remark., Spotify Song Recommender, cadence, Garmin MCP Server, re:scorched.
 - Experience: Barobo SWE intern (AWS CloudFront/DynamoDB/Terraform, quantified results), CSES software developer → incoming VP of Technology, Triton Web Developers.
 - Stats used on `/`: 1× hackathon podium, 37+ users onboarded, 2.9M+ interactions modeled, 741+ miles run.
-- Assets: processed headshot `public/images/headshot.jpg` (880×1100, 4:5); raw shots in `~/Downloads/Caden Cheng Headshots/`; UCSD seal `public/ucsd-seal.svg`; resume `public/uploads/resume.pdf` (updated Aug 2026).
+- Assets: processed headshot `public/images/headshot.jpg` (880×1100, 4:5); raw shots in `~/Downloads/Caden Cheng Headshots/`; UCSD seal `public/ucsd-seal.svg`; resume `public/uploads/Cheng_Caden_resume.pdf` (updated Oct 2026).
 - No testimonials, press, or case studies — do not fabricate any.
 
 ## Product Principles
