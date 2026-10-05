@@ -22,7 +22,7 @@ export type Experience = {
 export const EXPERIENCE: Experience[] = [
   {
     role: "Software Engineer Intern",
-    org: "Barobo · San Jose, CA",
+    org: "Barobo · Davis, CA",
     date: "Jun 2026 — Aug 2026",
     bullets: [
       "Signed CloudFront video URLs with a configurable TTL (default 30 min); rejects ~175 expired links/month.",
@@ -32,9 +32,18 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    role: "Software Developer → Incoming VP of Technology",
+    role: "VP of Technology",
     org: "Computer Science Engineering Society (CSES) · UCSD",
-    date: "Oct 2025 — Present",
+    date: "Sep 2026 — Present",
+    bullets: [
+      "Supervise 3 engineers shipping production RAG features for an enterprise AI startup client on GCP.",
+      "Designed the technical interview rubric and question set used to hire engineering managers and developers.",
+    ],
+  },
+  {
+    role: "Software Developer",
+    org: "Computer Science Engineering Society (CSES) · UCSD",
+    date: "Oct 2025 — Aug 2026",
     bullets: [
       "Built Google OAuth (NextAuth) + JWT sessions for a lab-inventory app used by 100 members in 10 labs.",
       "Enforced 4-role RBAC across 12 API routes with 10 scoped permissions; 15 Jest tests run on every PR.",

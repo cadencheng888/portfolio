@@ -39,7 +39,7 @@ Personal portfolio for Caden Cheng, CS + Mathematics student at UC San Diego ('2
 ## Evidence on Hand
 
 - 7 real projects with GitHub links (`lib/data.ts`): inVISION (Best Interactive AI, ACM Diamond Hacks, 500+ participants), Silent Speech (#1 Best Overall, San D Hacks), remark., Spotify Song Recommender, cadence, Garmin MCP Server, re:scorched.
-- Experience: Barobo SWE intern (AWS CloudFront/DynamoDB/Terraform, quantified results), CSES software developer → incoming VP of Technology, Triton Web Developers.
+- Experience: Barobo SWE intern (AWS CloudFront/DynamoDB/Terraform, quantified results), CSES VP of Technology (software developer Oct 2025 – Aug 2026), Triton Web Developers.
 - Stats used on `/`: 1× hackathon podium, 37+ users onboarded, 2.9M+ interactions modeled, 741+ miles run.
 - Assets: processed headshot `public/images/headshot.jpg` (880×1100, 4:5); raw shots in `~/Downloads/Caden Cheng Headshots/`; UCSD seal `public/ucsd-seal.svg`; resume `public/uploads/Cheng_Caden_resume.pdf` (updated Oct 2026).
 - No testimonials, press, or case studies — do not fabricate any.

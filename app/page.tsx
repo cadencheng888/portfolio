@@ -35,11 +35,11 @@ const EXPERIENCES = [
   {
     name: "barobo inc",
     role: "software engineer intern",
-    meta: ["san jose, ca", "june 2026 - august 2026"],
+    meta: ["davis, ca", "june 2026 - august 2026"],
   },
   {
     name: "computer science engineering society",
-    role: "software developer, incoming vp of technology",
+    role: "software developer → vp of technology",
     meta: ["la jolla, ca", "october 2025 - present"],
   },
   {
