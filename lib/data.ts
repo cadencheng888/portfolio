@@ -38,6 +38,8 @@ export const EXPERIENCE: Experience[] = [
     bullets: [
       "Supervise 3 engineers shipping production RAG features for an enterprise AI startup client on GCP.",
       "Designed the technical interview rubric and question set used to hire engineering managers and developers.",
+      "Onboarded 5 EMs on a repo-setup guide: CODEOWNERS, lint/build CI, code-owner-gated main.",
+      "Wrote the Git guide 26 developers follow for branch naming, conventional commits, and their first reviewed PR.",
     ],
   },
   {
@@ -85,11 +87,11 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Silent Speech",
-    badge: "★ BEST HACK",
+    badge: "★ #1 OVERALL BEST HACK",
     award: true,
     date: "Jan 2026",
     description:
-      "Real-time lip reading with a BiGRU over 90-frame clips of 88 mouth/jaw landmarks: 78% (39/50) live word accuracy. Recorded and labeled the 5-word dataset in 24h, normalized by mouth width for distance invariance; noise + frame-drop augmentation raised val accuracy 72→79%. Best Hack at SanD Hacks.",
+      "Real-time lip reading with a BiGRU over 90-frame clips of 88 mouth/jaw landmarks: 78% (39/50) live word accuracy. Recorded and labeled the 5-word dataset in 24h, normalized by mouth width for distance invariance; noise + frame-drop augmentation raised val accuracy 72→79%. #1 Overall Best Hack at SanD Hacks.",
     tags: ["PyTorch", "MediaPipe", "OpenCV", "Python"],
     github: "https://github.com/davdwan21/Silent-Speech",
   },
@@ -99,7 +101,7 @@ export const PROJECTS: Project[] = [
     award: false,
     date: "Jun 2026",
     description:
-      "Voice agent built in 24h that turns overheard plans into calendar events and spoken commands into actions. Claude gets 5 tools across 11 app categories, routed through 3 tiers (Agentverse → Calendar → Browserbase), at 3.2s median speech-to-event latency. An on-device OpenCV face gate keeps the mic off unless a face is in view.",
+      "Voice agent built in 24h that turns overheard plans into calendar events and spoken commands into actions. Voice intents route across 3 tiers (Direct APIs → Specialized Agents → Browser Automation) covering 11 apps, at 3.2s median speech-to-event latency. An on-device OpenCV face gate keeps the mic off unless a face is in view.",
     tags: ["Python", "TypeScript", "React", "FastAPI", "Claude API", "Deepgram"],
     github: "https://github.com/cadencheng888/remark.",
   },
@@ -170,9 +172,9 @@ export const SKILLS: { group: string; items: string[] }[] = [
       "Docker",
       "CI/CD",
       "AWS (CloudFront, DynamoDB, CLI)",
+      "GCP",
       "Terraform",
       "Cursor",
-      "Gemini",
       "Linux/Unix",
     ],
   },

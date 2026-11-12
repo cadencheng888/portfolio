@@ -59,7 +59,7 @@ const PROJECTS_V2 = [
   {
     name: "silent speech",
     blurb: "real-time lip-reading bigru, 78% live word accuracy",
-    meta: ["best hack at sand hacks", "january 2026"],
+    meta: ["#1 overall best hack at sand hacks", "january 2026"],
     github: "https://github.com/davdwan21/Silent-Speech",
   },
   {
