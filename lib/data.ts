@@ -38,7 +38,7 @@ export const EXPERIENCE: Experience[] = [
     bullets: [
       "Supervise 3 engineers shipping production RAG features for an enterprise AI startup client on GCP.",
       "Designed the technical interview rubric and question set used to hire engineering managers and developers.",
-      "Onboarded 5 EMs on a repo-setup guide: CODEOWNERS, lint/build CI, code-owner-gated main.",
+      "Onboarded 6 EMs on a repo-setup guide: taught CODEOWNERS, lint/build CI, code-owner-gated main.",
       "Wrote the Git guide 26 developers follow for branch naming, conventional commits, and their first reviewed PR.",
     ],
   },
