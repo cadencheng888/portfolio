@@ -2,11 +2,27 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
+const TITLE = "caden cheng — software engineer";
+const DESCRIPTION =
+  "software engineer building full stack and ai-powered products.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://cadenfcheng.com"),
-  title: "caden cheng — software engineer",
-  description:
-    "software engineer building full stack and ai-powered products.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "caden cheng",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
