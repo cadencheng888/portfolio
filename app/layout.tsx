@@ -7,7 +7,7 @@ const DESCRIPTION =
   "software engineer building full stack and ai-powered products.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cadenfcheng.com"),
+  metadataBase: new URL("https://www.cadenfcheng.com"),
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: "/" },
